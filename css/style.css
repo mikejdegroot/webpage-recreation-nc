@@ -2,18 +2,43 @@ body {
   background-color: white;
   height: 100vh; }
 
+p {
+  font-size: 18px !important; }
+
+span {
+  font-weight: bold !important; }
+
 .image-styles, .topLogo, .nurseImage {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: auto; }
+  margin: 0 auto; }
 
 .topLogo {
-  height: 400px;
-  width: 800px;
+  height: 100px;
+  width: 200px;
   background-image: url("../assets/logo@2x.jpg"); }
 
 .nurseImage {
-  height: 600px;
-  width: 1000px;
+  position: relative;
+  height: 300px;
+  top: 50px;
+  width: 100%;
   background-image: url("../assets/header-img@2x.jpg"); }
+
+.info {
+  position: relative;
+  top: 50px; }
+  .info .infoTwo {
+    margin-top: 50px; }
+    .info .infoTwo ul {
+      list-style-image: url("../assets/icon-tick.svg");
+      font-weight: bold; }
+  .info .infoThree {
+    margin-top: 50px; }
+    .info .infoThree span {
+      color: dodgerblue; }
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen; } }

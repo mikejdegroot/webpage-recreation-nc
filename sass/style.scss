@@ -1,27 +1,64 @@
 $primary: white;
+$secondary: dodgerblue;
 
 body {
   background-color: $primary;
   height: 100vh;
 }
 
+p {
+  font-size: 18px !important;
+}
+
+span {
+  font-weight: bold !important;
+}
+
 .image-styles {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: auto;
+  margin:  0 auto;
 }
 
 .topLogo {
-  height: 400px;
-  width: 800px;
+  height: 100px;
+  width: 200px;
   background-image: url("../assets/logo@2x.jpg");
   @extend .image-styles;
 }
 
 .nurseImage {
-  height: 600px;
-  width: 1000px;
+  position: relative;
+  height: 300px;
+  top: 50px;
+  width: 100%;
   background-image: url("../assets/header-img@2x.jpg");
   @extend .image-styles;
+}
+
+.info {
+  position: relative;
+  top: 50px;
+  .infoTwo {
+    margin-top: 50px;
+    ul {
+    list-style-image: url('../assets/icon-tick.svg');
+    font-weight: bold;
+    }
+  }
+  .infoThree {
+    margin-top: 50px;
+    span {
+      color: $secondary;
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
 }
