@@ -19,6 +19,10 @@ span {
   font-weight: bold !important;
 }
 
+.hidden {
+  display: none;
+}
+
 .image-styles {
   background-position: center;
   background-size: contain;
@@ -35,8 +39,8 @@ span {
 
 .nurseImage {
   position: relative;
+  top: -10px;
   height: 300px;
-  top: 100px;
   width: 100%;
   background-image: url("../assets/header-img@2x.jpg");
   @extend .image-styles;
@@ -45,6 +49,9 @@ span {
 .info {
   position: relative;
   top: 50px;
+  padding-left: 40px;
+  display:block;
+  overflow:auto;
   .infoTwo {
     margin-top: 50px;
     ul {
@@ -68,16 +75,52 @@ span {
 }
 
 .formOne {
+  position: relative;
+  top: -17px;
   .registerForm {
+    .registerTitle {
+      border-bottom: 1px solid $secondary;
+      padding: 15px;
+      h1{
+        color: $secondary;
+        font-size: 30px;
+      }
+    }
+    .field {
+      height: 85px;
+    }
+    ul {
+      .passWarn {
+
+      color: $secondary;
+      }
+      .emailWarn {
+        color: red;
+      }
+    }
+    .check {
+      height: 20px;
+      width: 20px;
+      margin-top: 12px;
+    }
+    .residenceCheck {
+      padding-left: 10px;
+      position: relative;
+      top: -5px;
+    }
+    label {
+      padding-top: 12px;
+    }
     .button {
       background-color: $secondary;
-      width: 90
+      color: $primary;
+      font-weight: bold;
     }
   }
 }
 
 footer {
-    background-color: grey;
+    background-color: #F1EFF0;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -92,8 +135,47 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        background-color: lightgreen;
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 16px !important;
+  }
+  .registerForm {
+    height: 650px;
+    .registerTitle {
+      margin-top: 30px;
     }
+
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+  .topLogo {
+    margin: auto;
+  }
+  .nurseImage {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .info {
+    width: 95%;
+    margin: auto;
+    top: 10px;
+    .infoTwo {
+      top: 10px;
+      ul {
+        li {
+          padding: 3px;
+        }
+      }
+    }
+  }
+  .registerForm {
+    width: 90%;
+    margin: 12px auto;
+    height: 580px;
+  }
+
 }

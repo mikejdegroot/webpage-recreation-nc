@@ -8,6 +8,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="topLogo"></div>
@@ -15,7 +16,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
       <div class="column is-3 is-offset-1">
         <div class="nurseImage"></div>
       </div>
-      <div class="info column is-3">
+      <div class="info column is-4">
         <div class="infoOne">
           <p>Thanks for your interest in the role:</p>
           <span><p>Healthcare Worker - working from Maidstone Branch</p></span>
@@ -37,25 +38,33 @@ https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
       </div>
       <div class="formOne column is-3">
         <form class="registerForm control">
-          <h1>Register</h1>
+          <div class="registerTitle">
+            <h1>Register</h1>
+          </div>
           <div class="field">
             <label class="label">Email: *</label>
-              <input class="input is-expanded" name="">
+              <input class="input is-expanded emailInput" name="">
+              <ul>
+                <li class="emailWarn warn"></li>
+              </ul>
           </div>
 
           <div class="field">
             <label class="label">Password: *</label>
-            <input class="input is-expanded" type="password" name="password">
+            <input class="input is-expanded passInput" type="password" name="password">
+            <ul>
+              <li class="passWarn warn"></li>
+            </ul>
           </div>
           <div class="field">
             <label class="label">Confirm Password: *</label>
               <input class="input is-expanded" type="password" name="password" >
           </div>
           <div class="field">
-            <input type="checkbox" name="" value="">
-            <span>I have the right to work in the UK</span>
+            <input type="checkbox" class="check">
+            <span class="residenceCheck">I have the right to work in the UK</span>
           </div>
-          <button class="button">Submit</button>
+          <a class="button is-fullwidth">Register</a>
         </form>
       </div>
     </div>
