@@ -31,17 +31,37 @@ https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
         </div>
         <div class="infoThree">
           <p>Applied for a role with Newcross before?</p>
-          <span><p>Login with your email & password</p></span>
+          <span><a>Login with your email & password</a></span>
         </div>
 
       </div>
       <div class="formOne column is-3">
-        <form class="registerForm">
+        <form class="registerForm control">
           <h1>Register</h1>
-          <input type="text" name="" placeholder="sldkn">
+          <div class="field">
+            <label class="label">Email: *</label>
+              <input class="input is-expanded" name="">
+          </div>
+
+          <div class="field">
+            <label class="label">Password: *</label>
+            <input class="input is-expanded" type="password" name="password">
+          </div>
+          <div class="field">
+            <label class="label">Confirm Password: *</label>
+              <input class="input is-expanded" type="password" name="password" >
+          </div>
+          <div class="field">
+            <input type="checkbox" name="" value="">
+            <span>I have the right to work in the UK</span>
+          </div>
+          <button class="button">Submit</button>
         </form>
       </div>
     </div>
-
+    <footer>
+      <div class="footerImg">
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,9 +1,14 @@
 $primary: white;
-$secondary: dodgerblue;
+$secondary: #01669C;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
   background-color: $primary;
-  height: 100vh;
+  height: 100%;
 }
 
 p {
@@ -31,7 +36,7 @@ span {
 .nurseImage {
   position: relative;
   height: 300px;
-  top: 50px;
+  top: 100px;
   width: 100%;
   background-image: url("../assets/header-img@2x.jpg");
   @extend .image-styles;
@@ -50,12 +55,42 @@ span {
   .infoThree {
     margin-top: 50px;
     span {
-      color: $secondary;
+      a {
+        color: $secondary !important;
+        text-decoration: underline;
+        &:hover {
+          color: grey !important;
+        }
+      }
 
     }
   }
 }
 
+.formOne {
+  .registerForm {
+    .button {
+      background-color: $secondary;
+      width: 90
+    }
+  }
+}
+
+footer {
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    .footerImg {
+      background-image: url("../assets/celear-back-logo.png");
+      height: 100px;
+      width: 200px;
+      @extend .image-styles;
+    }
+}
 
 @media screen and (max-width: 480px) {
     body {
