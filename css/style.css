@@ -1,0 +1,19 @@
+body {
+  background-color: white;
+  height: 100vh; }
+
+.image-styles, .topLogo, .nurseImage {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto; }
+
+.topLogo {
+  height: 400px;
+  width: 800px;
+  background-image: url("../assets/logo@2x.jpg"); }
+
+.nurseImage {
+  height: 600px;
+  width: 1000px;
+  background-image: url("../assets/header-img@2x.jpg"); }

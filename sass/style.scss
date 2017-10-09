@@ -1,0 +1,27 @@
+$primary: white;
+
+body {
+  background-color: $primary;
+  height: 100vh;
+}
+
+.image-styles {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.topLogo {
+  height: 400px;
+  width: 800px;
+  background-image: url("../assets/logo@2x.jpg");
+  @extend .image-styles;
+}
+
+.nurseImage {
+  height: 600px;
+  width: 1000px;
+  background-image: url("../assets/header-img@2x.jpg");
+  @extend .image-styles;
+}

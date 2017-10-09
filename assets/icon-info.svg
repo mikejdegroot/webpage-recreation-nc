@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-info</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,82 C4.1402,82 1,78.8605 1,75 C1,71.1409 4.1402,68 8,68 C11.8598,68 15,71.1402 15,75 C15,78.8605 11.8598,82 8,82 Z M8,69.4 C11.0877,69.4 13.6,71.9123 13.6,75 C13.6,78.0877 11.0877,80.6 8,80.6 C4.9123,80.6 2.4,78.0877 2.4,75 C2.4,71.9123 4.9123,69.4 8,69.4 Z M8.7,77.1 L8.7,74.3 C8.7,73.9136 8.3871,73.6 8,73.6 L6.6,73.6 L6.6,75 L7.3,75 L7.3,77.1 L5.9,77.1 L5.9,78.5 L10.1,78.5 L10.1,77.1 L8.7,77.1 Z M8,73.075 C8.48324916,73.075 8.875,72.6832492 8.875,72.2 C8.875,71.7167508 8.48324916,71.325 8,71.325 C7.51675084,71.325 7.125,71.7167508 7.125,72.2 C7.125,72.6832492 7.51675084,73.075 8,73.075 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing" transform="translate(-17.000000, -838.000000)">
+            <g id="fieldgroup" transform="translate(16.000000, 770.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon-info" fill="#0063A3" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
